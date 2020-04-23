@@ -1,0 +1,277 @@
+body{
+    margin: 0;
+    background-color: #0c2352;
+}
+.menu{
+    border-top: none;
+    border:0 solid white;
+    width: 100%;
+   background-color:  black;
+   background: rgba(255,255,255,0.05);
+   overflow: auto;
+   
+}
+.menu ul {
+    margin: 0;
+    padding: 0%;
+    list-style: none;
+    line-height: 60px;
+    
+
+}
+.menu li { 
+    float:left;
+    
+ 
+}  
+
+.menu ul li a {
+    
+    display: block;
+    text-decoration: none;
+    width: 150px;
+    font-size: 20px;
+    float: left;
+   text-align:center ;
+   letter-spacing: 0.5px;
+   color: white;
+}
+.menu ul li a:hover{
+    background-color: burlywood;
+    opacity: 0,8;
+    color:white;
+    border-radius: 5px 5px 5px 5px;
+    padding: 1px 10px;
+}
+.search {
+    margin-top: 15px;
+    margin-right:100px;
+    float: right;
+}
+
+input[type=text]{
+    width:10 30px;
+    margin-right: 10px;
+    padding: 8px 40px;
+    border: none;
+    font-size: 16px;
+
+}
+input[placeholder]{
+    padding: 8px 30px;
+    font-size: 16px;
+
+}
+button{
+    float: right;
+    background:orange;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    padding: 7px;
+}
+
+.anim{
+    
+    width: 100%;
+    padding: 0px;
+    border: 1px solid white;
+    background-color: rgba(255,255,255,0.05);
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    animation-name: css-animation;
+    animation-duration: 10s;
+    
+}
+
+@keyframes css-animation{
+    
+    from{
+        background: royalblue;
+    }
+    to {
+        background:rgb(0, 0, 0);
+        color:blackS;
+        font: size 30px;
+    }
+}
+
+/* new animation0*/
+.am{
+    float: left;
+    position: absolute;
+    top: 60%;
+    left: 15%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    box-shadow: 0 20px 50px rgba(0, 0,0, 5);
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 80px 80px;
+    overflow: hidden;
+}
+.am:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(255,255,255,0.05);
+    padding: 50% 0px;
+}
+
+.am span:nth-child(1) {
+    position:absolute;
+    top: 0;
+    left: 0;
+    height: 5px;
+    width: 100%;
+    background: linear-gradient(to right, #fff900 ,#1799ff);
+    animation: animation-top 2s linear infinite;
+   
+}
+
+.am span:nth-child(2) {
+    position:absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 5px;
+    background: linear-gradient(to bottom, #fff900 ,#1799ff);
+    animation: animation-right 2s linear infinite;
+    animation-delay: 1s;
+}
+
+.am span:nth-child(3) {
+    position:absolute;
+    left: 0;
+    bottom: 0;
+    height: 5px;
+    width: 100%;
+    background: linear-gradient(to left, #fff900 ,#1799ff);
+    animation: animation-bottom 2s linear infinite;
+ 
+}
+.am span:nth-child(4) {
+    position:absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 5px;
+    background: linear-gradient(to left, #fff900 ,#1799ff);
+    animation: animation-left 2s linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes animation-top {
+    0% {
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(100%);
+    }
+}
+@keyframes animation-right {
+    0% {
+        transform:translateY(-100%);
+    }
+    100%{
+        transform: translateY(100%);
+    }
+}
+@keyframes animation-left {
+    0% {
+        transform: translateY(100%);
+    }
+    100%{
+        transform: translatey(-100%);
+    }
+}
+@keyframes animation-bottom {
+    0% {
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translate(-100%);
+    }
+}
+.d0 a{
+    float: left;
+}
+
+.d a{
+    float: left;
+    margin-left: 360px;
+}
+.d1 a{
+    float: left;
+    margin: 0% 720px;
+}
+
+.d2 a{
+    float: left;
+    margin: 0% 1080px;
+    
+}
+
+
+.d1 a:hover{
+    background: linear-gradient(#fff900 ,#1799ff);
+    font-size: 40px;
+    color: black;
+    font-style: italic;  
+     
+}
+.d0 a:hover{
+    background: linear-gradient(#fff900 ,#1799ff);
+    font-size: 40px;
+    color: black;
+    font-style: italic;  
+     
+}
+.d a:hover{
+    background: linear-gradient(#fff900 ,#1799ff);
+    font-size: 40px;
+    color: black;
+    font-style: italic;  
+     
+}
+
+.d2 a:hover{
+    background: linear-gradient(#fff900 ,#1799ff);
+    font-size: 40px;
+    color: black;
+    font-style: italic;  
+     
+}
+
+
+/*another pages*/
+
+.t1{
+    font-size: 100px;
+    text-align: center;
+    color: white;
+    animation-name: css-animatio;
+    animation-duration: 10s;
+   
+   
+}
+
+@keyframes css-animatio{
+    
+    
+    from{
+        color:  red ;
+    }
+    to {
+        color:white;
+        color:blackS;
+        font: size 30px;
+    }
+}
